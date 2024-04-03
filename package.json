@@ -10,11 +10,11 @@
     "start": "turbo start"
   },
   "dependencies": {
-    "turbo": "~1.13.0"
+    "turbo": "~1.13.2"
   },
   "devDependencies": {
     "@acme/typescript-config": "workspace:~",
-    "@biomejs/biome": "~1.6.3"
+    "@biomejs/biome": "~1.6.4"
   },
   "engines": {
     "node": ">=18"
