@@ -7,7 +7,6 @@
   "scripts": {
     "clean": "pnpx rimraf ./{.next,.turbo}",
     "dev": "next dev",
-    "lint": "next lint",
     "build": "next build",
     "start": "next start"
   },
