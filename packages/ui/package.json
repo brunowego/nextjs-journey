@@ -16,7 +16,7 @@
     "./tailwind.config": "./tailwind.config.ts"
   },
   "scripts": {
-    "clean": "bunx rimraf ./.turbo"
+    "clean": "pnpx rimraf ./.turbo"
   },
   "dependencies": {
     "@acme/tailwind-config": "workspace:~",
