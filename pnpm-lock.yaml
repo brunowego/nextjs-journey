@@ -39,6 +39,9 @@ importers:
       react-dom:
         specifier: ~18.2.0
         version: 18.2.0(react@18.2.0)
+      recharts:
+        specifier: ~2.12.5
+        version: 2.12.5(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@acme/typescript-config':
         specifier: workspace:~
@@ -118,9 +121,6 @@ importers:
       react-day-picker:
         specifier: ~8.10.0
         version: 8.10.0(date-fns@3.6.0)(react@18.2.0)
-      recharts:
-        specifier: ~2.12.5
-        version: 2.12.5(react-dom@18.2.0)(react@18.2.0)
       sonner:
         specifier: ~1.4.41
         version: 1.4.41(react-dom@18.2.0)(react@18.2.0)
