@@ -1,13 +1,9 @@
 import type { Metadata } from 'next'
 import type { ReactNode, JSX } from 'react'
 
-import {
-  TeamSwitcher,
-  MainNav,
-  Search,
-  UserNav,
-  ThemeToggle,
-} from '@/components'
+import { TeamSwitcher } from '@acme/ui'
+
+import { MainNav, Search, UserNav, ThemeToggle } from '@/components'
 
 export const metadata: Metadata = {
   title: 'Dashboard',
