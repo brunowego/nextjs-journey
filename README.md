@@ -1,7 +1,3 @@
-# Next.js Base
+# Next.js with Base
 
 TODO
-
-## Docs
-
-- [Developer Guide](/DEVELOPER.md)

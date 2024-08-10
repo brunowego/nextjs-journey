@@ -1,3 +1,0 @@
-# @acme/tailwind-config
-
-TBD

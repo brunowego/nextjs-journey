@@ -1,13 +1,13 @@
 import animatePlugin from 'tailwindcss-animate'
-
-import tailwindPreset, { type Config } from '@acme/tailwind-config'
-
-export type { Config }
+import type { Config } from 'tailwindcss'
 
 export default {
-  presets: [tailwindPreset],
+  darkMode: ['class'],
   content: ['./src/components/**/*.{ts,tsx}'],
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       colors: {
         border: 'hsl(var(--border))',
@@ -43,6 +43,10 @@ export default {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        navbar: {
+          DEFAULT: 'hsl(var(--navbar))',
+          foreground: 'hsl(var(--navbar-foreground))',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -67,3 +71,5 @@ export default {
   },
   plugins: [animatePlugin],
 } satisfies Config
+
+export type { Config }
