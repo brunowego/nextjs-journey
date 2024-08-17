@@ -29,7 +29,7 @@ const LayoutHeader = ({
 
       <header
         className={cn(
-          'fixed inset-y-0 z-20 flex w-16 flex-col gap-y-4 px-2 py-4 text-center',
+          'fixed inset-y-0 z-20 flex w-16 flex-col gap-y-1 px-2 py-4 text-center',
           infinite ? 'bg-card shadow-md' : null,
           className,
         )}
