@@ -20,7 +20,7 @@ export default function ThemeToggle({
       className={className}
       onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
       size='icon'
-      variant='link'
+      variant='ghost'
     >
       <Sun className='size-5 dark:hidden' />
       <Moon className='hidden size-5 dark:block' />
