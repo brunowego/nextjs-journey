@@ -7,7 +7,7 @@ type LogOutProps = ButtonProps
 
 export default function LogOut({ className }: LogOutProps): JSX.Element {
   return (
-    <Button className={className} variant='link'>
+    <Button className={className} variant='ghost'>
       <Icon className='size-5 shrink-0' />
 
       <span className='sr-only'>Log Out</span>
