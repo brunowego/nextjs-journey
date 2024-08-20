@@ -71,6 +71,9 @@ importers:
 
   packages/ui:
     dependencies:
+      react:
+        specifier: ~18
+        version: 18.3.1
       tailwindcss:
         specifier: ~3.4.10
         version: 3.4.10
@@ -78,6 +81,9 @@ importers:
       '@acme/typescript-config':
         specifier: workspace:~
         version: link:../../tools/typescript-config
+      '@types/react':
+        specifier: ~18
+        version: 18.3.3
 
   tools/typescript-config: {}
 

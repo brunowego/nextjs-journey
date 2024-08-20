@@ -2,10 +2,15 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@acme/ui",
   "private": true,
+  "exports": {
+    "./components/*": "./src/components/*.tsx"
+  },
   "dependencies": {
+    "react": "~18",
     "tailwindcss": "~3.4.10"
   },
   "devDependencies": {
-    "@acme/typescript-config": "workspace:~"
+    "@acme/typescript-config": "workspace:~",
+    "@types/react": "~18"
   }
 }
