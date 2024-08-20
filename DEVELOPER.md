@@ -15,4 +15,7 @@ pnpm install
 
 # Setup Convex environment
 ( cd ./packages/db && pnpm dev )
+
+#
+pnpm dev --filter @acme/web
 ```
