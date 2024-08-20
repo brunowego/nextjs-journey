@@ -22,6 +22,9 @@ pnpm install
 # Seed the database
 pnpm db:seed
 
+# Deploy BaaS services
+pnpm deploy --filter @acme/db
+
 # Start the development server
 pnpm dev --filter @acme/web
 ```

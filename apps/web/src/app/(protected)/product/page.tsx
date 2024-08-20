@@ -2,6 +2,6 @@ import type { JSX } from 'react'
 
 import ListProducts from './components/list-products'
 
-export default function ProductPage(): JSX.Element {
+export default async function ProductPage(): Promise<JSX.Element> {
   return <ListProducts />
 }

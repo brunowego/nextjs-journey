@@ -1,6 +1,6 @@
 import { query } from './_generated/server'
 
-export const list = query({
+export const getAll = query({
   args: {},
   handler: async (ctx) => {
     return await ctx.db.query('products').order('desc').take(10)

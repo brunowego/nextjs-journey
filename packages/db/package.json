@@ -5,7 +5,8 @@
   "main": "./index.ts",
   "scripts": {
     "db:seed": "npx convex import --table products ./seed/products.jsonl",
-    "dev": "convex dev"
+    "dev": "convex dev",
+    "deploy": "convex deploy"
   },
   "dependencies": {
     "@auth/core": "~0.34.2",

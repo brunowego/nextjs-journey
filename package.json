@@ -6,7 +6,8 @@
     "db:seed": "turbo db:seed",
     "lint": "trunk check",
     "format": "trunk fmt",
-    "dev": "turbo dev"
+    "dev": "turbo dev",
+    "deploy": "turbo deploy"
   },
   "dependencies": {
     "turbo": "~2.0.14"
