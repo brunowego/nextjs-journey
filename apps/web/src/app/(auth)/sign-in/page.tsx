@@ -1,5 +1,7 @@
 import type { JSX } from 'react'
 
+import SignIn from './components/sign-in'
+
 export default function SignInPage(): JSX.Element {
-  return <h1 className='text-xl'>Sign In</h1>
+  return <SignIn />
 }
