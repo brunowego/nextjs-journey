@@ -1,5 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@acme/db",
-  "private": true
+  "private": true,
+  "main": "./index.ts",
+  "scripts": {
+    "dev": "convex dev"
+  },
+  "dependencies": {
+    "@auth/core": "~0.34.2",
+    "@convex-dev/auth": "~0.0.57",
+    "convex": "~1.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "~22.4.1"
+  }
 }

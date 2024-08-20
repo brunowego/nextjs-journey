@@ -12,6 +12,8 @@ runtimes:
     - node@18.12.1
     - python@3.10.8
 lint:
+  disabled:
+    - prettier
   definitions:
     - name: biome
       files:
@@ -22,7 +24,6 @@ lint:
     - git-diff-check
     - markdownlint@0.41.0
     - osv-scanner@1.8.3
-    - prettier@3.3.3
     - trivy@0.54.1
     - trufflehog@3.81.9
     - yamllint@1.35.1

@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "lint": "trunk check",
-    "format": "trunk fmt"
+    "format": "trunk fmt",
+    "dev": "turbo dev"
   },
   "dependencies": {
     "turbo": "~2.0.14"

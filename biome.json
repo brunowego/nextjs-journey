@@ -37,5 +37,8 @@
       "quoteStyle": "single",
       "jsxQuoteStyle": "single"
     }
+  },
+  "files": {
+    "ignore": ["packages/db/convex/_generated"]
   }
 }
