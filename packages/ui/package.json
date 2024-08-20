@@ -4,5 +4,8 @@
   "private": true,
   "dependencies": {
     "tailwindcss": "~3.4.10"
+  },
+  "devDependencies": {
+    "@acme/typescript-config": "workspace:~"
   }
 }
