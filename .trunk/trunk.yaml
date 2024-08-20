@@ -28,8 +28,9 @@ lint:
     - trufflehog@3.81.9
     - yamllint@1.35.1
 actions:
+  disabled:
+    - trunk-check-pre-push
   enabled:
     - trunk-announce
-    - trunk-check-pre-push
     - trunk-fmt-pre-commit
     - trunk-upgrade-available
