@@ -12,6 +12,7 @@ export const typographyVariants = cva('', {
       '3xl': 'text-3xl',
     },
     variant: {
+      title: 'text-lg leading-8',
       h1: 'text-3xl leading-10',
       p: 'text-base',
       muted: 'text-muted-foreground',

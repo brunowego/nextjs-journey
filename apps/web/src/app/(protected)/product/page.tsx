@@ -1,5 +1,7 @@
 import type { JSX } from 'react'
 
+import ListProducts from './components/list-products'
+
 export default function ProductPage(): JSX.Element {
-  return <h1 className='text-xl'>Product</h1>
+  return <ListProducts />
 }
