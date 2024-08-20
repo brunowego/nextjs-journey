@@ -5,6 +5,7 @@
   "main": "./index.ts",
   "scripts": {
     "db:init": "convex dev --typecheck disable --until-success",
+    "db:dashboard": "npx convex dashboard",
     "db:seed": "npx convex import --table products ./seed/products.jsonl",
     "dev": "convex dev",
     "deploy": "convex deploy"

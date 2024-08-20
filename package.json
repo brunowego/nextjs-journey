@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "db:seed": "turbo db:seed",
+    "db:dashboard": "turbo db:dashboard",
     "lint": "trunk check",
     "format": "trunk fmt",
     "dev": "turbo dev",

@@ -5,6 +5,7 @@
     "db:seed": {
       "cache": false
     },
+    "db:dashboard": {},
     "dev": {
       "cache": false,
       "persistent": true
