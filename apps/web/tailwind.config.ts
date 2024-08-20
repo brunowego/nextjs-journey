@@ -7,4 +7,11 @@ export default {
     './src/components/**/*.tsx',
     '../../packages/ui/src/components/*.tsx',
   ],
+  theme: {
+    extend: {
+      container: {
+        center: true,
+      },
+    },
+  },
 } satisfies Config
