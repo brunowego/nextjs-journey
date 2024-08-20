@@ -17,7 +17,7 @@ pnpm install
 ( cd ./apps/web; cp ./.env.local.sample ./.env.local )
 
 # Setup Convex environment
-( cd ./packages/db && pnpm dev )
+( cd ./packages/db && pnpm db:init )
 
 # Seed the database
 pnpm db:seed

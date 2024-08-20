@@ -4,6 +4,7 @@
   "private": true,
   "main": "./index.ts",
   "scripts": {
+    "db:init": "convex dev --typecheck disable --until-success",
     "db:seed": "npx convex import --table products ./seed/products.jsonl",
     "dev": "convex dev",
     "deploy": "convex deploy"
