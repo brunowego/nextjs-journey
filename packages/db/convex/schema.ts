@@ -11,5 +11,6 @@ export default defineSchema({
   products: defineTable({
     title: v.string(),
     price: v.float64(),
+    state: v.optional(v.string()),
   }),
 })
