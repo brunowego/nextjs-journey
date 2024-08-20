@@ -13,9 +13,12 @@
 # Install dependencies
 pnpm install
 
+# Copy environment files
+( cd ./apps/web; cp ./.env.local.sample ./.env.local )
+
 # Setup Convex environment
 ( cd ./packages/db && pnpm dev )
 
-#
+# Start the development server
 pnpm dev --filter @acme/web
 ```

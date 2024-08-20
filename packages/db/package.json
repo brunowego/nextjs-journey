@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "@auth/core": "~0.34.2",
-    "@convex-dev/auth": "~0.0.57",
     "convex": "~1.14.1"
   },
   "devDependencies": {

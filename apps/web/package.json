@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@acme/auth": "workspace:~",
+    "@acme/db": "workspace:~",
     "@acme/ui": "workspace:~",
     "next": "14.2.5",
     "react": "~18",

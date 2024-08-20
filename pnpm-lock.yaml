@@ -24,6 +24,12 @@ importers:
 
   apps/web:
     dependencies:
+      '@acme/auth':
+        specifier: workspace:~
+        version: link:../../packages/auth
+      '@acme/db':
+        specifier: workspace:~
+        version: link:../../packages/db
       '@acme/ui':
         specifier: workspace:~
         version: link:../../packages/ui
@@ -62,14 +68,21 @@ importers:
         specifier: ~5
         version: 5.5.4
 
+  packages/auth:
+    dependencies:
+      '@convex-dev/auth':
+        specifier: ~0.0.57
+        version: 0.0.57(convex@1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+    devDependencies:
+      '@acme/typescript-config':
+        specifier: workspace:~
+        version: link:../../tools/typescript-config
+
   packages/db:
     dependencies:
       '@auth/core':
         specifier: ~0.34.2
         version: 0.34.2
-      '@convex-dev/auth':
-        specifier: ~0.0.57
-        version: 0.0.57(convex@1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       convex:
         specifier: ~1.14.1
         version: 1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)

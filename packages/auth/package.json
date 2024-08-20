@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@acme/auth",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "@convex-dev/auth": "~0.0.57"
+  },
+  "devDependencies": {
+    "@acme/typescript-config": "workspace:~"
+  }
+}
