@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@auth/core": "~0.34.2",
-    "convex": "~1.14.1"
+    "convex": "~1.14.1",
+    "convex-helpers": "~0.1.52"
   },
   "devDependencies": {
     "@acme/typescript-config": "workspace:~",

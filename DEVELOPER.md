@@ -26,8 +26,8 @@ pnpm db:seed
 pnpm deploy --filter @acme/db
 
 # Start the development server
-pnpm dev --filter @acme/web
 pnpm dev --filter @acme/db
+pnpm dev --filter @acme/web
 # or, run all services
 pnpm dev
 ```
