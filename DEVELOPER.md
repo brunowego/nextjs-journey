@@ -19,6 +19,9 @@ pnpm install
 # Setup Convex environment
 ( cd ./packages/db && pnpm dev )
 
+# Seed the database
+pnpm db:seed
+
 # Start the development server
 pnpm dev --filter @acme/web
 ```

@@ -3,6 +3,7 @@
   "name": "acme",
   "private": true,
   "scripts": {
+    "db:seed": "turbo db:seed",
     "lint": "trunk check",
     "format": "trunk fmt",
     "dev": "turbo dev"

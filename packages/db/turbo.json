@@ -2,6 +2,9 @@
   "$schema": "https://turbo.build/schema.json",
   "extends": ["//"],
   "tasks": {
+    "db:seed": {
+      "cache": false
+    },
     "dev": {
       "cache": false,
       "persistent": true

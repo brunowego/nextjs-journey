@@ -8,4 +8,8 @@ export default defineSchema({
     userId: v.id('users'),
     body: v.string(),
   }),
+  products: defineTable({
+    title: v.string(),
+    price: v.float64(),
+  }),
 })
