@@ -1,5 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "@acme/ui",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "tailwindcss": "~3.4.10"
+  }
 }
