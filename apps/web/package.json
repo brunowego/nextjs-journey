@@ -11,8 +11,8 @@
     "@acme/auth": "workspace:~",
     "@acme/db": "workspace:~",
     "@acme/ui": "workspace:~",
+    "@convex-dev/auth": "~0.0.57",
     "next": "14.2.5",
-    "react": "~18",
     "react-dom": "~18"
   },
   "devDependencies": {

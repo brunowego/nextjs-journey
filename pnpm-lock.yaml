@@ -33,12 +33,12 @@ importers:
       '@acme/ui':
         specifier: workspace:~
         version: link:../../packages/ui
+      '@convex-dev/auth':
+        specifier: ~0.0.57
+        version: 0.0.57(convex@1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       next:
         specifier: 14.2.5
         version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react:
-        specifier: ~18
-        version: 18.3.1
       react-dom:
         specifier: ~18
         version: 18.3.1(react@18.3.1)
@@ -72,7 +72,7 @@ importers:
     dependencies:
       '@convex-dev/auth':
         specifier: ~0.0.57
-        version: 0.0.57(convex@1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        version: 0.0.57(convex@1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
     devDependencies:
       '@acme/typescript-config':
         specifier: workspace:~
@@ -1685,7 +1685,7 @@ snapshots:
   '@biomejs/cli-win32-x64@1.8.3':
     optional: true
 
-  '@convex-dev/auth@0.0.57(convex@1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@convex-dev/auth@0.0.57(convex@1.14.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@auth/core': 0.31.0
       arctic: 1.9.2
@@ -1697,6 +1697,7 @@ snapshots:
       path-to-regexp: 7.1.0
       server-only: 0.0.1
     optionalDependencies:
+      next: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
     transitivePeerDependencies:
       - '@simplewebauthn/browser'

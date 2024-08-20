@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import { fontSans } from '@/lib/fonts'
 import '@/styles/globals.css'
 
+import Providers from './providers'
+
 export const metadata: Metadata = {
   title: 'Next.js with Convex (BaaS)',
 }
@@ -17,7 +19,9 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>): JSX.Element {
   return (
     <html lang='en'>
-      <body className={fontSans.className}>{children}</body>
+      <body className={fontSans.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   )
 }
