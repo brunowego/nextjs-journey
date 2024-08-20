@@ -2,6 +2,9 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "acme",
   "private": true,
+  "dependencies": {
+    "turbo": "~2.0.14"
+  },
   "engines": {
     "node": ">=20"
   },
