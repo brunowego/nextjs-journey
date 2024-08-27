@@ -22,6 +22,9 @@ pnpm install
 # Seed the database
 pnpm db:seed
 
+# Open the Convex dashboard
+pnpm db:dashboard
+
 # Deploy BaaS services
 pnpm deploy --filter @acme/db
 
