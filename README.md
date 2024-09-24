@@ -1,3 +1,3 @@
-# Next.js with Base
+# Next.js (Base)
 
 TODO
