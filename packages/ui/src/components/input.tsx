@@ -4,7 +4,7 @@ import { type InputHTMLAttributes, forwardRef } from 'react'
 import cn from '../utils/cn'
 
 export const inputVariants = cva(
-  'flex h-12 w-full rounded-md border border bg-input px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:font-medium file:text-sm placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50',
+  'flex h-12 w-full rounded-md border bg-input px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:font-medium file:text-sm placeholder:text-muted-foreground focus-visible:border-primary focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50',
 )
 
 type InputProps = InputHTMLAttributes<HTMLInputElement> &
