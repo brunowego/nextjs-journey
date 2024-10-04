@@ -1,3 +1,3 @@
-# Next.js (Base)
+# Next.js with numbro.js
 
 TODO
