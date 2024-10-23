@@ -12,7 +12,9 @@ export type SearchParams = {
 
 const cleanParams = (params: SearchParams) => ({
   ...Object.fromEntries(
-    Object.entries(params).filter(([_, value]) => value != null),
+    Object.entries(params).filter(
+      ([_, value]) => value != null && value !== '',
+    ),
   ),
 })
 
