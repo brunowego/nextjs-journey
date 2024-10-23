@@ -15,13 +15,15 @@ export default function useRouterStuff() {
     const newParams = new URLSearchParams(searchParams)
 
     if (kv) {
-      // biome-ignore lint/complexity/noForEach: This is a simple forEach loop
-      Object.entries(kv).forEach(([k, v]) => newParams.set(k, v))
+      for (const [k, v] of Object.entries(kv)) {
+        newParams.set(k, v)
+      }
     }
 
     if (opts?.ignore) {
-      // biome-ignore lint/complexity/noForEach: This is a simple forEach loop
-      opts.ignore.forEach((k) => newParams.delete(k))
+      for (const k of opts.ignore) {
+        newParams.delete(k)
+      }
     }
 
     const queryString = newParams.toString()
@@ -45,16 +47,16 @@ export default function useRouterStuff() {
     const newParams = new URLSearchParams(searchParams)
 
     if (set) {
-      // biome-ignore lint/complexity/noForEach: This is a simple forEach loop
-      Object.entries(set).forEach(([k, v]) =>
-        newParams.set(k, Array.isArray(v) ? v.join(arrayDelimiter) : v),
-      )
+      for (const [k, v] of Object.entries(set)) {
+        newParams.set(k, Array.isArray(v) ? v.join(arrayDelimiter) : v)
+      }
     }
 
     if (del) {
       if (Array.isArray(del)) {
-        // biome-ignore lint/complexity/noForEach: This is a simple forEach loop
-        del.forEach((k) => newParams.delete(k))
+        for (const k of del) {
+          newParams.delete(k)
+        }
       } else {
         newParams.delete(del)
       }
