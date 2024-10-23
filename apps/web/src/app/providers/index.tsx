@@ -3,6 +3,7 @@ import type { ReactNode, JSX } from 'react'
 import NextThemesProvider from './next-themes'
 import TooltipProvider from './tooltip'
 import ReactQueryProvider from './react-query'
+import SonnerProvider from './sonner'
 
 interface ProvidersProps {
   children: ReactNode
@@ -19,6 +20,8 @@ export default function Providers({ children }: ProvidersProps): JSX.Element {
       <TooltipProvider>
         <ReactQueryProvider>{children}</ReactQueryProvider>
       </TooltipProvider>
+
+      <SonnerProvider />
     </NextThemesProvider>
   )
 }
