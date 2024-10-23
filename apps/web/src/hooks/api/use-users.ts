@@ -5,16 +5,22 @@ import type { User } from '@acme/db/types'
 import api from '@/lib/api'
 
 export type SearchParams = {
-  search?: string | null
-  sortBy?: string | null
+  search?: string
+  sortBy?: string
   page?: number
 }
 
+const cleanParams = (params: SearchParams) => ({
+  ...Object.fromEntries(
+    Object.entries(params).filter(([_, value]) => value != null),
+  ),
+})
+
 const userKeys = {
   getUsers: (searchParams: SearchParams) =>
-    ['users', 'list', searchParams] as const,
+    ['users', 'list', cleanParams(searchParams)] as const,
   getUsersCount: (searchParams: SearchParams) =>
-    ['users', 'count', searchParams] as const,
+    ['users', 'count', cleanParams(searchParams)] as const,
 }
 
 const fetchUsers = async (params: SearchParams) => {
