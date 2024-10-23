@@ -26,6 +26,7 @@ export default function ReactQueryProvider({
           queries: {
             retry: false,
             staleTime: 60 * 1000 * 30, // 30 minutes
+            refetchOnWindowFocus: false,
           },
         },
         queryCache: new QueryCache({
