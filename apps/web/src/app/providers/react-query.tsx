@@ -2,9 +2,15 @@
 
 import { type ReactNode, type JSX, useState } from 'react'
 import { QueryClient } from '@tanstack/query-core'
-import { QueryClientProvider } from '@tanstack/react-query'
+import {
+  QueryCache,
+  MutationCache,
+  QueryClientProvider,
+} from '@tanstack/react-query'
 import { ReactQueryStreamedHydration } from '@tanstack/react-query-next-experimental'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+
+import toast from '@acme/ui/lib/toast'
 
 type ReactQueryProviderProps = {
   children: ReactNode
@@ -19,9 +25,29 @@ export default function ReactQueryProvider({
         defaultOptions: {
           queries: {
             retry: false,
-            staleTime: 5 * 1000, // 5 seconds
+            staleTime: 60 * 1000 * 30, // 30 minutes
           },
         },
+        queryCache: new QueryCache({
+          onError: (err, query) => {
+            if (query.state.data !== undefined) {
+              console.error(err)
+
+              toast.error('Something went wrong')
+            }
+          },
+        }),
+        mutationCache: new MutationCache({
+          onError: (err, _variables, _context, mutation) => {
+            if (mutation.options.onError) {
+              return
+            }
+
+            console.error(err)
+
+            toast.error('Something went wrong')
+          },
+        }),
       }),
   )
 
